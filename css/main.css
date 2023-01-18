@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* slide show */
+.slideshow {
+  background-color: black;
+  height: 550px;
+  min-width: 960px;
+  position: relative;
+  /* border: 1px solid red; */
+  /* overflow: hidden; */
+}
+.slideshow_slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* border: 2px dotted red; */
+}
+/* 4장의 이미지를 기준점으로 모두 이동 */
+.slideshow_slides  a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+ }
+/*네비게이션네브바를 중앙에 배치*/
+.slideshow_nav a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 62px;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+/* 중앙을기점으로 좌우 이동 */
+.slideshow_nav a.prev {
+  margin-left: -462px;
+}
+.slideshow_nav a.next {
+  margin-left: 400px;
+}
+/* 인디게이터를 슬라이드쇼 아래 중앙위치 배치 */
+.indicator {
+  position: absolute;
+  left: 0;
+  right: 0; 
+  bottom: 20px;
+  text-align: center;
+}
+.indicator a {
+  display: inline-block;
+  padding: 5px;
+  font-size: 24px;
+  color: #fff;
+  opacity: 0.8;
+}
+.indicator a.active {
+  color: rgb(255, 162, 0);
+}
+
+
+
+
+
+

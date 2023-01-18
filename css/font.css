@@ -1,0 +1,11 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+#top { font-size: 23px; }
+.title { font-size: 50px; }
+.board_box { font-size: 18px; }
+* {font-family: 'Nanum Pen Script', cursive;}
+
+
+input[type=file] {
+    font-size: 13px;
+}
